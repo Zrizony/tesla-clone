@@ -21,6 +21,9 @@ const Wrap = styled.div`
     height: 100vh;
     background: no-repeat center url('https://res.cloudinary.com/dalkffrhf/image/upload/v1667749795/Fiverr-Sprint-4/imgs/tesla-clone/model-3_ckt3za.jpg');
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 `
 
 const TopText = styled.div`
@@ -29,7 +32,9 @@ const TopText = styled.div`
 `
 
 const CallToActionBtns = styled.div`
-
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 `
 
 const LeftBtn = styled.button`
@@ -39,9 +44,12 @@ const LeftBtn = styled.button`
     width: 264px;
     border-radius: 4px;
     opacity: 0.85;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 600;
 `
 
 const RightBtn = styled(LeftBtn)`
-
+    background-color: white;
+    color: rgba(23, 26, 32, 0.8);
+    margin-bottom: 5vh;
 `
