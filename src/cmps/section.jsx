@@ -1,21 +1,26 @@
 import styled from 'styled-components'
+import Fade from 'react-reveal/Fade'
 
 export function Section({ title, subheader, imgUrl, leftBtn, rightBtn }) {
   return (
     <Wrap bgImg={imgUrl}>
-      <TopText>
-        <h1>{title}</h1>
-        <p>{subheader}</p>
-      </TopText>
+      <Fade bottom>
+        <TopText>
+          <h1>{title}</h1>
+          <p>{subheader}</p>
+        </TopText>
+      </Fade>
 
-      <CTA>
-        <Btns>
-          <LeftBtn>{leftBtn}</LeftBtn>
-          {rightBtn && <RightBtn>{rightBtn}</RightBtn>}
-        </Btns>
+      <Fade bottom>
+        <CTA>
+          <Btns>
+            <LeftBtn>{leftBtn}</LeftBtn>
+            {rightBtn && <RightBtn>{rightBtn}</RightBtn>}
+          </Btns>
 
-        <DownArrow src="https://res.cloudinary.com/dalkffrhf/image/upload/v1668425333/Fiverr-Sprint-4/imgs/tesla-clone/arrow-down_yomycv.svg" />
-      </CTA>
+          <DownArrow src="https://res.cloudinary.com/dalkffrhf/image/upload/v1668425333/Fiverr-Sprint-4/imgs/tesla-clone/arrow-down_yomycv.svg" />
+        </CTA>
+      </Fade>
     </Wrap>
   )
 }
